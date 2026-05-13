@@ -1,0 +1,88 @@
+/* Estilo para el contenedor del carrusel */
+.contenedor-fotos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Estilo para que las fotos sean iguales y no se deformen */
+.foto-estilizada {
+    display: block;    /* Para que los márgenes automáticos funcionen */
+    margin: 15px auto; /* Centra la imagen y le da espacio arriba y abajo */
+    width: 300px;      /* Ajustá el tamaño a tu gusto */
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #333;
+}
+
+body {
+    background-image: url('foto4.jpg'); /* Pon el nombre de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* El fondo se queda quieto mientras haces scroll */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Opcional: Dale un fondo semitransparente al contenedor principal 
+   para que el texto se lea bien sobre la imagen */
+#corazon {
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 40px auto;      /* Esto centra el cuadro entero en la pantalla */
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px;       /* Limitamos el ancho para que no se estire de más */
+    
+    /* ESTO CENTRA EL TEXTO Y LAS IMÁGENES INTERNAS */
+    text-align: center; 
+    
+    /* Sombra opcional para darle profundidad */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+#menu {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 10px;               /* Espacio entre botones */
+    margin-bottom: 20px;
+}
+
+header h1 {
+    text-align: center;
+    color: #00d4ff;
+    margin-top: 20px;
+}
+
+/* Centrar el formulario dentro del cuadro blanco */
+form {
+    margin: 0 auto;       /* Centra el bloque del formulario horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centra los inputs y el botón internamente */
+    max-width: 400px;     /* Ajusta el ancho para que no sea tan gigante */
+    width: 100%;
+}
+
+/* Estilo para los inputs para que se vean mejor centrados */
+form input, form textarea {
+    width: 100%;          /* Ocupan todo el ancho del formulario (los 400px) */
+    box-sizing: border-box; 
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo para el botón enviar */
+form button {
+    width: 50%;           /* El botón puede ser más chico y estar centrado */
+    padding: 10px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
